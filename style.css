@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*font-family: "Open Sans", sans-serif;*/
+/*font-family: "Poppins", sans-serif;*/
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    display: flex;
+    padding: 40px 0px 0px 50px ;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 90%;
+}
+.title img{
+    width: 170px;
+    padding-bottom: 50px;
+}
+.items{
+    display: flex;
+    align-items: center;
+}
+.item-one img{
+    width: 570px;
+}
+.item-two{
+    padding-left: 80px;
+    padding-bottom: 122px;
+    width: 539px;
+}
+.item-two h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+    width: 370px;
+}
+.item-two p{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    width: 460px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.item-two button{
+    padding: 12px 50px 12px 50px;
+    border-radius: 20px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    box-shadow: 6px 6px 12px 7px rgb(0, 0, 0, 0.2);
+}
+.item-two button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    transition: .5s ease;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding-bottom: 20px;
+}
+.icons i{
+    color: white;
+    cursor: pointer;
+    border: solid 1px white;
+    border-radius: 100%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
+.icons i:hover{
+    color: hsl(300, 69%, 71%);
+    border: solid 1px hsl(300, 69%, 71%) ;
+    transition: .4s ease;
+}
+@media (max-width : 375px){
+    body{
+
+    }
+    .container{
+        width: 90%;
+        height: 100vh;
+    }
+    .title img{
+        width: 250px;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .items{
+        display: block;
+    }
+    .item-one img{
+        display: flex;
+        align-items: center;
+        padding-right: 50px;
+    }
+    .item-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-top: 60px;
+    }
+    .item-two h1{
+        text-align: center;
+    }
+    .item-two p{
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    .item-two button{
+        padding: 15px 110px 15px 110px;
+        font-size: 15px;
+    }
+    .icons {
+        width: 520px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
